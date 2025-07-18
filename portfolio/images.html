@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio Images.</title>
+  <style>
+    body {
+      background-color: rgb(242, 245, 245);
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    img {
+      width: 350px;
+      height: 350px;
+      border-radius: 5%;
+      box-shadow: 0 0 10px darkcyan;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.10);
+    }
+
+    @media (max-width: 768px) {
+      img {
+        width: 90%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <a href="/image3.jpg" download>
+      <img src="/image3.jpg" alt="image3">
+    </a>
+    <img src="/image5.jpg" alt="image5">
+    <img src="/image4.jpg" alt="image4">
+    <img src="/image1.jpg" alt="image1">
+    <img src="/image6.jpg" alt="image6">
+    <img src="/images7.jpg" alt="image7">
+  </div>
+</body>
+</html>
